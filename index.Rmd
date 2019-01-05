@@ -1,7 +1,7 @@
 ---
 title: "Passion Driven Statistics"
 author: "Modified for use with [R,](https://www.r-project.org/) [GitHub,](https://github.com/) and [Zotero](https://www.zotero.org/)"
-date: "Erik B. Erhardt, Alan T. Arnholt, and Lisa Dierker."
+date: "Erik B. Erhardt, Alan T. Arnholt, and Lisa Dierker"
 abstract: |
   Last updated: `r format(Sys.time(), "%B %d, %Y")`
 knit: "bookdown::render_book"
