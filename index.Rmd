@@ -1,7 +1,9 @@
 ---
 title: "Passion Driven Statistics"
 author: "Modified for use with [R,](https://www.r-project.org/) [GitHub,](https://github.com/) and [Zotero](https://www.zotero.org/)"
-date: 'Last updated: `r format(Sys.time(), "%B %d, %Y")`'
+date: "Erik B. Erhardt, Alan T. Arnholt, and Lisa Dierker."
+abstract: |
+  Last updated: `r format(Sys.time(), "%B %d, %Y")`
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 documentclass: book
@@ -12,19 +14,14 @@ css: "./CSS/style.css"
 knitr::opts_chunk$set(comment = NA, fig.align = "center", comment = NA, warning = FALSE, message = FALSE)
 ```
 
-
 # Copyright {-}
-
-
 
 ```{block, type = "rmdlicense"}
 This work is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License]( http://creativecommons.org/licenses/by-nc-sa/3.0)
 
-Please report any mistakes/typos/errata, suggestions, or problems at <https://github.com/alanarnholt/PDS-Bookdown2/issues>. 
+Please report any mistakes/typos/errata, suggestions, or problems at <https://github.com/erikerhardt/PDS-Bookdown2/issues>.
 
-The source code that creates this document resides at <https://github.com/alanarnholt/PDS-Bookdown2/>.
+The source code that creates this document resides at <https://github.com/erikerhardt/PDS-Bookdown2>, derived from <https://github.com/alanarnholt/PDS-Bookdown2/>.
 ```
 
-This document is maintained by [Alan T. Arnholt](https://alanarnholt.github.io/web/)
-
-
+This document is maintained by [Erik B. Erhardt](https://statacumen.com/about/)
