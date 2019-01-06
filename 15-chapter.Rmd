@@ -1,8 +1,6 @@
-
-
 # Linear Regression: Summarizing the Pattern of the Data with a Line^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b85ba80020ca600a81f9419678a69]
 
-So far we've used the scatterplot to describe the relationship between two quantitative variables, and in the special case of a linear relationship, we have supplemented the scatterplot with the correlation ($r$). The correlation, however, doesn't fully characterize the linear relationship between two quantitative variables—it only measures the strength and direction. We often want to describe more precisely how one variable changes with the other (by "more precisely," we mean more than just the direction), or predict the value of the response variable for a given value of the explanatory variable. In order to be able to do that, we need to summarize the linear relationship with a line that best fits the linear pattern of the data. In the remainder of this section, we will introduce a way to find such a line, learn how to interpret it, and use it (cautiously) to make predictions.
+So far we've used the scatterplot to describe the relationship between two quantitative variables, and in the special case of a linear relationship, we have supplemented the scatterplot with the correlation ($r$). The correlation, however, doesn't fully characterize the linear relationship between two quantitative variables---it only measures the strength and direction. We often want to describe more precisely how one variable changes with the other (by "more precisely," we mean more than just the direction), or predict the value of the response variable for a given value of the explanatory variable. In order to be able to do that, we need to summarize the linear relationship with a line that best fits the linear pattern of the data. In the remainder of this section, we will introduce a way to find such a line, learn how to interpret it, and use it (cautiously) to make predictions.
 
 Again, let's start with a motivating example:
 
@@ -20,14 +18,14 @@ PV <- predict(mod.lm, newdata = data.frame(Age = 60))
 PV
 library(grid)
 library(ggplot2)
-ggplot(data = signdist, aes(x = Age, y = Distance)) + 
+ggplot(data = signdist, aes(x = Age, y = Distance)) +
    geom_point(color = "purple") +
-   theme_bw() + 
-   labs(x = "Drivers Age (years)", y = "Sign Legibility Distance (feet)") + 
-   geom_smooth(method = "lm", se = FALSE) + 
-   geom_line(data = data.frame(Age = c(60, 60), 
-                               Distance = c(280, PV)), 
-             arrow = arrow(type = "closed", angle = 15), color = "red") + 
+   theme_bw() +
+   labs(x = "Drivers Age (years)", y = "Sign Legibility Distance (feet)") +
+   geom_smooth(method = "lm", se = FALSE) +
+   geom_line(data = data.frame(Age = c(60, 60),
+                               Distance = c(280, PV)),
+             arrow = arrow(type = "closed", angle = 15), color = "red") +
   geom_line(data = data.frame(Age = c(60, 19), Distance = c(PV, PV)),
             arrow = arrow(type = "closed", angle = 15, ends = "first"), color = "red")
 ```
@@ -58,11 +56,11 @@ Like any other line, the equation of the least-squares regression line for summa
 
 All we need to do is calculate the intercept $a$, and the slope $b$, which is easily done if we know:
 
-* $X$—the mean of the explanatory variable's values
-* $S_X$—the standard deviation of the explanatory variable's values
-* $Y$—the mean of the response variable's values
-* $S_Y$—the standard deviation of the response variable's values
-* $r$—the correlation coefficient
+* $X$---the mean of the explanatory variable's values
+* $S_X$---the standard deviation of the explanatory variable's values
+* $Y$---the mean of the response variable's values
+* $S_Y$---the standard deviation of the response variable's values
+* $r$---the correlation coefficient
 
 Given the five quantities above, the slope and intercept of the least squares regression line are found using the following formulas:
 
@@ -106,10 +104,10 @@ $$\widehat{\text{Distance}} = `r coef(summary(mod.lm))[1, 1]` `r b`\times \text{
 Here is the regression line plotted on the scatterplot:
 
 ```{r}
-ggplot(data = signdist, aes(x = Age, y = Distance)) + 
+ggplot(data = signdist, aes(x = Age, y = Distance)) +
    geom_point(color = "purple") +
-   theme_bw() + 
-   labs(x = "Drivers Age (years)", y = "Sign Legibility Distance (feet)") + 
+   theme_bw() +
+   labs(x = "Drivers Age (years)", y = "Sign Legibility Distance (feet)") +
    geom_smooth(method = "lm", se = FALSE) +
    labs(title = expression(hat(Y) == "576.7 - 3x") )
 ```
@@ -123,14 +121,14 @@ As we mentioned before, hand-calculation is not the focus of this course. We wan
 Let's go back now to our motivating example, in which we wanted to predict the maximum distance at which a sign is legible for a 60-year-old. Now that we have found the least squares regression line, this prediction becomes quite easy:
 
 ```{r, echo = FALSE}
-ggplot(data = signdist, aes(x = Age, y = Distance)) + 
+ggplot(data = signdist, aes(x = Age, y = Distance)) +
    geom_point(color = "purple") +
-   theme_bw() + 
-   labs(x = "Drivers Age (years)", y = "Sign Legibility Distance (feet)") + 
-   geom_smooth(method = "lm", se = FALSE) + 
-   geom_line(data = data.frame(Age = c(60, 60), 
-                               Distance = c(280, PV)), 
-             arrow = arrow(type = "closed", angle = 15), color = "red") + 
+   theme_bw() +
+   labs(x = "Drivers Age (years)", y = "Sign Legibility Distance (feet)") +
+   geom_smooth(method = "lm", se = FALSE) +
+   geom_line(data = data.frame(Age = c(60, 60),
+                               Distance = c(280, PV)),
+             arrow = arrow(type = "closed", angle = 15), color = "red") +
   geom_line(data = data.frame(Age = c(60, 19), Distance = c(PV, PV)),
             arrow = arrow(type = "closed", angle = 15, ends = "first"), color = "red")
 ```

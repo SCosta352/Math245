@@ -1,5 +1,3 @@
-
-
 # Working with Data
 
 Now that you have a research question, it is time to look at the data. Raw data consist of long lists of numbers and/or labels that are not very informative. Exploratory Data Analysis (EDA) is how we make sense of the data by converting them from their raw form to a more informative one. In particular, EDA consists of:
@@ -21,7 +19,12 @@ When working with data with more than just a few observations and/or variables r
 
 Empirical research is all about making decisions (the best ones possible with the information at hand). Please watch the Chapter 06 video below.
 
+<!---
 `r knitr::include_url("http://passiondrivenstatistics.com/2015/12/18/r-chapter-6/", height = "500px")`
+-->
+
+**Video:  04. Working with Data**
+<iframe src="https://player.vimeo.com/video/157497682?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 This will get you thinking about some of the earliest decisions you will need to make when working with your data (i.e. selecting columns and possibly rows).
 

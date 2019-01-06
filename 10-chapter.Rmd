@@ -1,10 +1,13 @@
-
-
 # Hypothesis Testing
 
 Please watch the Chapter 10 Video below.
 
+<!---
 `r knitr::include_url("http://passiondrivenstatistics.com/2015/07/15/chapter-10/", height = "500px")`
+-->
+
+**Video:  08. Hypothesis Testing**
+<iframe src="https://player.vimeo.com/video/133507581?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 
 Thus far, we have focused on descriptive statistics. Through our examination of frequency distributions, graphical representations of our variables, and calculations of center and spread, the goal has been to describe and summarize data. Now you will be introduced to inferential statistics. In addition to describing data, inferential statistics allow us to directly test our hypothesis by evaluating (based on a sample) our research question with the goal of generalizing the results to the larger population from which the sample was drawn.
@@ -94,7 +97,7 @@ Although you will **always be interpreting the p-value** for a statistical test,
 **Bivariate Statistical Tools:**
 
 * $C \rightarrow Q$ Analysis of Variance (ANOVA)
-* $C \rightarrow C$ Chi-Square Test of Independence ($\chi^2$) 
+* $C \rightarrow C$ Chi-Square Test of Independence ($\chi^2$)
 * $Q \rightarrow Q$ Correlation Coefficient (r)
 * $Q \rightarrow C$ Logistic regression
 

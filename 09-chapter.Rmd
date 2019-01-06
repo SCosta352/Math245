@@ -1,5 +1,3 @@
-
-
 # Graphing Relationships
 
 So far we have dealt with data obtained from one variable (either categorical or quantitative) and learned how to describe the distribution of the variable using the appropriate visual displays and numerical measures. In this section, examining relationships, we will look at two variables at a time and, as the title suggests, explore the relationship between them using (as before) visual displays and numerical summaries.
@@ -29,14 +27,19 @@ In most analyses involving two variables, each of the variables has a role. We d
 * the *response* variable (also known as the dependent variable (DV), or outcome)
 * the *explanatory* variable (also known as the independent variable (IV), or the predictor)
 
-At this point, we will be asking you to **“impose” a causal model** on your research question, despite the fact that you will not be able to directly evaluate a causal relationship. This video defines the two types of variables you will be identifying and shows you how this decision will guide the kinds of graphing you do and the kind of statistical tests that you will ultimately use. Please watch Chapter 09 Video below.
+At this point, we will be asking you to **"impose" a causal model** on your research question, despite the fact that you will not be able to directly evaluate a causal relationship. This video defines the two types of variables you will be identifying and shows you how this decision will guide the kinds of graphing you do and the kind of statistical tests that you will ultimately use. Please watch Chapter 09 Video below.
 
+<!---
 `r knitr::include_url("http://passiondrivenstatistics.com/2016/03/28/r-chapter-9/", height = "500px")`
+-->
+
+**Video:  07. Graphing Relationships**
+<iframe src="https://player.vimeo.com/video/160477834" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 
 ![](./graphics/graphdecisions.jpg)
 
-When graphing your data, it is important that each graph provides clear and accurate summaries of the data that do not mislead. 
+When graphing your data, it is important that each graph provides clear and accurate summaries of the data that do not mislead.
 
 
 ## Bivariate Graphing
@@ -46,12 +49,12 @@ When graphing your data, it is important that each graph provides clear and accu
 ```{r, fig.width = 8, fig.height = 4}
 library(ggplot2)
 library(PDS)
-ggplot(data = nesarc, aes(x = MajorDepression, fill = TobaccoDependence)) + 
+ggplot(data = nesarc, aes(x = MajorDepression, fill = TobaccoDependence)) +
   geom_bar(position = "fill") +
-  theme_bw() + 
-  labs(x = "", y = "Fraction", 
-       title = "Fraction of young adult daily smokers\nwith and without nicotine addiction\nby depression status") + 
-  scale_fill_manual(values = c("green", "red"), name = "Tobacco Addiction Status") + 
+  theme_bw() +
+  labs(x = "", y = "Fraction",
+       title = "Fraction of young adult daily smokers\nwith and without nicotine addiction\nby depression status") +
+  scale_fill_manual(values = c("green", "red"), name = "Tobacco Addiction Status") +
   guides(fill = guide_legend(reverse = TRUE))
 ```
 
@@ -66,12 +69,12 @@ mosaic(~TobaccoDependence + MajorDepression ,data = nesarc, shade = TRUE)
 
 ```{r}
 ggplot(data = frustration, aes(x = Major, y = Frustration.Score)) +
-  geom_boxplot() + 
-  theme_bw() + 
+  geom_boxplot() +
+  theme_bw() +
   labs(x = "", y = "Frustration Score", title = "Frustration Score by\n Academic Major")
 # Violin plots
 ggplot(data = frustration, aes(x = Major, y = Frustration.Score)) +
-  geom_violin() + 
+  geom_violin() +
   theme_bw() +
   labs(x = "", y = "Frustration Score", title = "Frustration Score by\n Academic Major")
 ```
@@ -80,24 +83,24 @@ ggplot(data = frustration, aes(x = Major, y = Frustration.Score)) +
 
 ```{r}
 library(PASWR2)
-ggplot(data = GRADES, aes(x = sat, y = gpa)) + 
-  geom_point(color = "lightblue") + 
+ggplot(data = GRADES, aes(x = sat, y = gpa)) +
+  geom_point(color = "lightblue") +
   theme_bw() +
   labs(x = "SAT score", y = "First semester college Grade Point Average") +
   geom_smooth(method = "lm")
 ```
 
 
-($Q \rightarrow C$) Scatter plot for logistic regression 
+($Q \rightarrow C$) Scatter plot for logistic regression
 
 ```{r}
 library(ISLR)
 library(ggplot2)
 Default$defaultN <- ifelse(Default$default == "No", 0, 1)
 Default$studentN <- ifelse(Default$student =="No", 0, 1)
-ggplot(data = Default, aes(x = balance, y = defaultN)) + 
-  geom_point(alpha = 0.5) + 
-  theme_bw() + 
+ggplot(data = Default, aes(x = balance, y = defaultN)) +
+  geom_point(alpha = 0.5) +
+  theme_bw() +
   stat_smooth(method = "glm", method.args = list(family = "binomial")) +
   labs(y = "Probability of Default")
 ```
@@ -105,10 +108,10 @@ ggplot(data = Default, aes(x = balance, y = defaultN)) +
 ## Multivariate Graphing
 
 ```{r, fig.width = 8, fig.height = 4}
-ggplot(data = nesarc, aes(x = MajorDepression, fill = TobaccoDependence)) + 
+ggplot(data = nesarc, aes(x = MajorDepression, fill = TobaccoDependence)) +
   geom_bar(position = "fill") +
-  theme_bw() + 
-  labs(x = "", y = "Fraction", title = "Fraction of young adult daily smokers\nwith and without nicotine addiction\nby depression status") + 
+  theme_bw() +
+  labs(x = "", y = "Fraction", title = "Fraction of young adult daily smokers\nwith and without nicotine addiction\nby depression status") +
   scale_fill_manual(values = c("green", "red"), name = "Tobacco Addiction Status") +
   facet_grid(Sex ~ .) +
   guides(fill = guide_legend(reverse = TRUE))

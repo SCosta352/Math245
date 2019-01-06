@@ -1,9 +1,13 @@
-
 # Chi-Square Test of Independence^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b8b0380020ca600863516c1304677]
 
 Please watch the Chapter 12 video below.
 
+<!---
 `r knitr::include_url("http://passiondrivenstatistics.com/2016/06/29/r-chapter-12/", height = "500px")`
+-->
+
+**Video:  10. Chi-Square Test of Independence**
+<iframe src="https://player.vimeo.com/video/172675181?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfulls
 
 
 The last statistical test that we studied (ANOVA) involved the relationship between a categorical explanatory variable ($X$) and a quantitative response variable ($Y$). Next, we will consider inferences about the relationships between two categorical variables, corresponding to case $C \rightarrow C$.
@@ -12,8 +16,8 @@ In our graphing, we have already summarized the relationship between two categor
 
 
  Now we will perform statistical inference for two categorical variables, using the sample data to draw conclusions about whether or not we have evidence that the variables are related in the larger population from which the sample was drawn. In other words, we would like to assess whether the relationship between $X$ and $Y$ that we observed in the data is due to a real relationship between $X$ and $Y$ in the population, or if it is something that could have happened just by chance due to sampling variability.
- 
-The statistical test that will answer this question is called the chi-square test of independence. Chi is a Greek letter that looks like this: $\chi$, so the test is sometimes referred to as: The $\chi^2$ test of independence. 
+
+The statistical test that will answer this question is called the chi-square test of independence. Chi is a Greek letter that looks like this: $\chi$, so the test is sometimes referred to as: The $\chi^2$ test of independence.
 
 Let's start with an **example**.
 
@@ -60,7 +64,7 @@ Before we introduce the chi-square test, let's conduct an exploratory data analy
 
 ## Exploratory Analysis
 
-Recall that the key to reporting appropriate summaries for a two-way table is deciding which of the two categorical variables plays the role of explanatory variable, and then calculating the conditional percentages — the percentages of the response variable for each value of the explanatory variable — separately. In this case, since the explanatory variable is gender, we would calculate the percentages of drivers who did (and did not) drink alcohol for males and females separately.
+Recall that the key to reporting appropriate summaries for a two-way table is deciding which of the two categorical variables plays the role of explanatory variable, and then calculating the conditional percentages --- the percentages of the response variable for each value of the explanatory variable --- separately. In this case, since the explanatory variable is gender, we would calculate the percentages of drivers who did (and did not) drink alcohol for males and females separately.
 
 Here is the table of conditional percentages:
 
@@ -117,7 +121,7 @@ How will we represent the null hypothesis?
 
 In the previous tests we introduced, the null hypothesis was represented by the null value. Here there is not really a null value, but rather a claim that the two categorical variables (drunk driving and gender, in this case) are independent.
 
-To represent the null hypothesis, we will calculate another set of counts — the counts that we would expect to see (instead of the observed ones) if drunk driving and gender were really independent (i.e., if $H_0$ were true). For example, we actually observed 77 males who drove drunk; if drunk driving and gender were indeed independent (if $H_0$ were true), how many male drunk drivers would we expect to see instead of 77? Similarly, we can ask the same kind of question about (and calculate) the other three cells in our table.
+To represent the null hypothesis, we will calculate another set of counts --- the counts that we would expect to see (instead of the observed ones) if drunk driving and gender were really independent (i.e., if $H_0$ were true). For example, we actually observed 77 males who drove drunk; if drunk driving and gender were indeed independent (if $H_0$ were true), how many male drunk drivers would we expect to see instead of 77? Similarly, we can ask the same kind of question about (and calculate) the other three cells in our table.
 
 In other words, we will have two sets of counts:
 
@@ -185,7 +189,7 @@ A p-value of `r chisq.test(TA, correct = FALSE)$p.value` is not small at all. Th
 
 ## Post Hoc Tests
 
-For post hoc tests following a Chi-Square, we use what is referred to as the Bonferroni Adjustment. Like the post hoc tests used in the context of ANOVA, this adjustment is used to counteract the problem of Type I Error that occurs when multiple comparisons are made. Following a Chi-Square test that includes an explanatory variable with 3 or more groups, we need to subset to each possible paired comparison. When interpreting these paired comparisons, rather than setting the $\alpha$-level (p-value) at 0.05, we divide 0.05 by the number of paired comparisons that we will be making. The result is our new $\alpha$-level (p-value). For example, if we have a significant Chi-Square when examining the association between number of cigarettes smoked per day (a 5 level categorical explanatory variable: 1-5 cigarettes; 6 -10 cigarettes; 11–15 cigarettes; 16-20 cigarettes; and >20) and nicotine dependence (a two level categorical response variable – yes vs. no), we will want to know which pairs of the 5 cigarette groups are different from one another with respect to rates of nicotine dependence.
+For post hoc tests following a Chi-Square, we use what is referred to as the Bonferroni Adjustment. Like the post hoc tests used in the context of ANOVA, this adjustment is used to counteract the problem of Type I Error that occurs when multiple comparisons are made. Following a Chi-Square test that includes an explanatory variable with 3 or more groups, we need to subset to each possible paired comparison. When interpreting these paired comparisons, rather than setting the $\alpha$-level (p-value) at 0.05, we divide 0.05 by the number of paired comparisons that we will be making. The result is our new $\alpha$-level (p-value). For example, if we have a significant Chi-Square when examining the association between number of cigarettes smoked per day (a 5 level categorical explanatory variable: 1-5 cigarettes; 6 -10 cigarettes; 11-15 cigarettes; 16-20 cigarettes; and >20) and nicotine dependence (a two level categorical response variable - yes vs. no), we will want to know which pairs of the 5 cigarette groups are different from one another with respect to rates of nicotine dependence.
 
 In other words, we will make $\binom{5}{2}=10$ comparisons (all possible comparisons). We will compare group 1 to 2; 1 to 3; 1 to 4; 1 to 5; 2 to 3; 2 to 4; 2 to 5; 3 to 4; 3 to 5; 4 to 5. When we evaluate the p-value for each of these post hoc chi-square tests, we will use 0.05/10 = 0.005 as our alpha. If the p-value is < 0.005 then we will reject the null hypothesis. If it is > 0.005, we will fail to reject the null hypothesis.
 
@@ -210,7 +214,7 @@ chisq.post.hoc(NT, control = "bonferroni", popsInRows  = FALSE)
 
 **Chi Square Asssignment**
 
-Post syntax to your private GitHub repository used to run a Chi-Square Test  along with corresponding output and a few sentences of interpretation. 
+Post syntax to your private GitHub repository used to run a Chi-Square Test  along with corresponding output and a few sentences of interpretation.
 
 **Example of how to write results for Chi-Square tests:**
 
@@ -237,9 +241,9 @@ T3 <- xtabs(~TobaccoDependence + DCScat, data = nesarc)
 T3
 prop.table(T3, 2)
 library(ggplot2)
-ggplot(data = nesarc[(!is.na(nesarc$TobaccoDependence) & 
-                        !is.na(nesarc$DCScat)), ], 
-       aes(x = DCScat, fill = TobaccoDependence)) + 
+ggplot(data = nesarc[(!is.na(nesarc$TobaccoDependence) &
+                        !is.na(nesarc$DCScat)), ],
+       aes(x = DCScat, fill = TobaccoDependence)) +
   geom_bar(position = "fill") +
   theme_bw() +
   labs(x= "Daily Smoking Frequency", y = "Fraction") +

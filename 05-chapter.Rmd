@@ -24,7 +24,7 @@ The introduction describes the question you intend to investigate and how your r
 
 *Literature Review.* The literature review summarizes the state of the field you investigate. Each statement in the literature review should build to the justification of your own research by identifying a hole in existing scholarship. Emphasize major findings and key conclusions rather than citing tangentially related works. Assume your reader is basically knowledgeable about your topic rather than writing an exhaustive review. The following is a successful section of a literature review:
 
-*Through to the mid-1990s, most research suggested that academic censorship reduced college students’ respect for authority. However, results were inconsistent. In a landmark two-year case study of college student social dynamics, Jones (1996) found that college students’ respect for authority declined significantly after censorship was imposed. Jones relied exclusively on objective measures rather than self-reported measures of respect for authority.*
+*Through to the mid-1990s, most research suggested that academic censorship reduced college students' respect for authority. However, results were inconsistent. In a landmark two-year case study of college student social dynamics, Jones (1996) found that college students' respect for authority declined significantly after censorship was imposed. Jones relied exclusively on objective measures rather than self-reported measures of respect for authority.*
 
 Observe that the first two sentences identify trends in the literature, the third sentence emphasizes major findings, and the fourth sentence suggests gaps in the literature that the present study will fill. Moreover, this literature review is successful because it summarizes findings and can be understood by specialists and non-specialists alike. Strive for this level of precision in your literature review.
 
@@ -50,7 +50,7 @@ The methods section describes how the research was conducted. It comprises discu
 
 *Sample.* Identify who or what was studied (people, animals, etc.). Identify the level of analysis studied (individual, group, or aggregate). Describe observations vividly so your reader can distinguish them clearly. If you group observations, use meaningful names (`Low-Income Women`) rather than abbreviations (`PPM100`) or labels (`Control Group`). The following is successful section of a sample description:
 
-The sample of 1,203 pregnant women was drawn from two public prenatal clinics in Texas and Maryland. The ethnic composition was African American ($n = 414, 34.4$%), Hispanic, primarily Mexican American ($n = 412, 34.2$%), and White ($n = 377, 31.3$%). Most women were between the ages of 20 and 29 years; 30% were teenagers. All were urban residents, and most (94%) had incomes below the poverty level as defined using each state’s criteria for Women, Infants, and Children (WIC) eligibility.
+The sample of 1,203 pregnant women was drawn from two public prenatal clinics in Texas and Maryland. The ethnic composition was African American ($n = 414, 34.4$%), Hispanic, primarily Mexican American ($n = 412, 34.2$%), and White ($n = 377, 31.3$%). Most women were between the ages of 20 and 29 years; 30% were teenagers. All were urban residents, and most (94%) had incomes below the poverty level as defined using each state's criteria for Women, Infants, and Children (WIC) eligibility.
 
 This sample description is successful because it identifies both the observations (1,203 pregnant women) and the location (two prenatal clinics in Texas and Maryland). Furthermore, it describes the composition of the group ethnically and by income using language consistent with writing standards for the empirical research.
 
@@ -74,15 +74,15 @@ This measures discussion is successful because it indicates how attitudes were m
 
 *Procedure*
 
-*One adult was selected for interview in each household, and face-to-face computer assisted interviews were conducted in respondents’ homes following informed consent procedures.*
+*One adult was selected for interview in each household, and face-to-face computer assisted interviews were conducted in respondents' homes following informed consent procedures.*
 
 *Measures*
 
-*Lifetime major depression (i.e. those experienced in the past 12 months and prior to the past 12 months) were assessed using the NIAAA, Alcohol Use Disorder and Associated Disabilities Interview Schedule – DSM-IV (AUDADIS-IV) (Grant et al., 2003; Grant, Harford, Dawson, & Chou, 1995). The tobacco module of the AUDADIS-IV contains detailed questions on the frequency, quantity, and patterning of tobacco use as well as symptom criteria for DSM- IV nicotine dependence. Current smoking was evaluated through both smoking frequency ("About how often did you usually smoke in the past year?") coded dichotomously in terms of the presence or absence of daily smoking, and quantity ("On the days that you smoked in the last year, about how many cigarettes did you usually smoke?").*
+*Lifetime major depression (i.e. those experienced in the past 12 months and prior to the past 12 months) were assessed using the NIAAA, Alcohol Use Disorder and Associated Disabilities Interview Schedule - DSM-IV (AUDADIS-IV) (Grant et al., 2003; Grant, Harford, Dawson, & Chou, 1995). The tobacco module of the AUDADIS-IV contains detailed questions on the frequency, quantity, and patterning of tobacco use as well as symptom criteria for DSM- IV nicotine dependence. Current smoking was evaluated through both smoking frequency ("About how often did you usually smoke in the past year?") coded dichotomously in terms of the presence or absence of daily smoking, and quantity ("On the days that you smoked in the last year, about how many cigarettes did you usually smoke?").*
 
 **Predicted Results or Implications**
 
-￼It is important that this section includes real implications linked to possible results. Often writers use this section to merely state their research question. This is an important section of a research proposal and sometimes best written after you've had a few days to step away from your paper and allow yourself to put your question (and possible answers) into perspective.
+It is important that this section includes real implications linked to possible results. Often writers use this section to merely state their research question. This is an important section of a research proposal and sometimes best written after you've had a few days to step away from your paper and allow yourself to put your question (and possible answers) into perspective.
 
 *Model Implications:*
 
@@ -98,7 +98,7 @@ Breslau, N., Peterson, E. L., Schultz, L. R., Chilcoat, H. D., & Andreski, P. (1
 
 Dierker, L. C., Avenevoli, S., Goldberg, A., & Glantz, M. (2004). Defining subgroups of adolescents at risk for experimental and regular smoking. Prevention Science, 5(3), 169-183.
 
-Dierker, L. C., Avenevoli, S., Merikangas, K. R., Flaherty, B. P., & Stolar, M. (2001) Association between psychiatric disorders and the progression of tobacco use behaviors. Journal of the American Academy of Child & Adolescent Psychiatry, 40(10), 1159-1167. 
+Dierker, L. C., Avenevoli, S., Merikangas, K. R., Flaherty, B. P., & Stolar, M. (2001) Association between psychiatric disorders and the progression of tobacco use behaviors. Journal of the American Academy of Child & Adolescent Psychiatry, 40(10), 1159-1167.
 
 Dawson, D. A., Stinson, F. S., Chou, P. S., Kay, W., & Pickering, R. (2003). The Alcohol Use Disorder and Associated Disabilities Interview Schedule-IV (AUDADISIV): Reliability of alcohol consumption, tobacco use, family history of depression and psychiatric diagnostic modules in a general population sample. Drug and Alcohol Dependence, 71(1), 7-16.
 
@@ -118,7 +118,7 @@ Stanton, W. R., Lowe, J. B., & Silva, P. A. (1995). Antecedents of vulnerability
 
 *Avoid direct quotations.* Instead, summarize other authors' work. Include the name and year of an author in-line and include their work in your references section.
 
-*Avoid language bias.* Refer to people as those people refer to themselves. For a study, use “participants” rather than "subjects."
+*Avoid language bias.* Refer to people as those people refer to themselves. For a study, use "participants" rather than "subjects."
 
 *Be succinct.* Excise unnecessary words and sentences. Revise liberally.
 
@@ -134,6 +134,6 @@ The Writing Program at Appalachian State University offers a variety of excellen
 
 **Research Plan Assignment**
 
-You will spend the next three weeks writing your research plan. This plan should include the following: Title, Author’s name (this will be blank for CrowdGrader submissions to ensure double blind reviewing), Introduction, Method, Implications, and References. The paper should be 4 to 5 pages double-spaced (including a page for references).  In preparation for writing the introduction section, you should have found and read at least 25 primary source articles, although only those that help provide important background and allow you to make an argument in support of your proposed research should be cited.  This assignment will be graded A-F and will act as the basis for your final poster. Your paper should be submitted through <http://www.crowdgrader.org> AND pushed to your private repository. More detailed directions can be found on the course repository.
+You will spend the next three weeks writing your research plan. This plan should include the following: Title, Author's name (this will be blank for CrowdGrader submissions to ensure double blind reviewing), Introduction, Method, Implications, and References. The paper should be 4 to 5 pages double-spaced (including a page for references).  In preparation for writing the introduction section, you should have found and read at least 25 primary source articles, although only those that help provide important background and allow you to make an argument in support of your proposed research should be cited.  This assignment will be graded A-F and will act as the basis for your final poster. Your paper should be submitted through <http://www.crowdgrader.org> AND pushed to your private repository. More detailed directions can be found on the course repository.
 
 --------------------------

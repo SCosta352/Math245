@@ -1,12 +1,15 @@
-
-
-# Graphing: One Variable at a Time 
+# Graphing: One Variable at a Time
 
 **One Categorical Variable**
 
 Please watch the Chapter 08 Video below.
 
+<!---
 `r knitr::include_url("http://passiondrivenstatistics.com/2016/01/20/r-chapter-8/", height = "500px")`
+-->
+
+**Video:  06. Graphing: One Variable at a Time**
+<iframe src="https://player.vimeo.com/video/152493596?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 Consider the data frame `EPIDURALF` from the `PASWR2` package which records intermediate results from a study to determine whether the traditional sitting position or the hamstring stretch position is superior for administering epidural anesthesia to pregnant women in labor as measured by the number of obstructive (needle to bone) contacts.  In this study, there were four physicians.  To summarize the number of patients treated by each physician we can use the function `xtabs`.
 
@@ -20,7 +23,7 @@ A barplot of the number of patients treated by each physician (`doctor`) using `
 ```{r}
 library(ggplot2)
 ggplot(data = EPIDURALF, aes(x = doctor)) +
-  geom_bar(fill = "lightblue") + 
+  geom_bar(fill = "lightblue") +
   theme_bw()
 ```
 
@@ -37,9 +40,9 @@ How are patients divided across physicians? Are they equally divided? If not, do
 
 **One Quantitative Variable**
 
-We have explored the distribution of a categorical variable using a bar chart supplemented by numerical measures (percent of observations in each category). In this section, we will learn how to display the distribution of a quantitative variable. 
+We have explored the distribution of a categorical variable using a bar chart supplemented by numerical measures (percent of observations in each category). In this section, we will learn how to display the distribution of a quantitative variable.
 
-To display data from one quantitative variable graphically, we typically use the histogram. 
+To display data from one quantitative variable graphically, we typically use the histogram.
 
 **Example^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b848b80020ca600e242e2129b8f6e]**
 
@@ -82,7 +85,7 @@ We will get a sense of the overall pattern of the data from the histogram's cent
 When describing the shape of a distribution, we should consider:
 
 * Symmetry/skewness of the distribution.
-* Peakedness (modality)—the number of peaks (modes) the distribution has.
+* Peakedness (modality)---the number of peaks (modes) the distribution has.
 
 We distinguish between:
 
@@ -98,7 +101,7 @@ hist(c(x, y), breaks = "Scott", col = "blue", main = "Symmetric\nDouble-peaked (
 hist(z, breaks = "Scott", col = "blue", main = "Symmetric\nUniform Distribution", xlab = "")
 ```
 
-Note that all three distributions are symmetric, but are different in their modality (peakedness). The first distribution is unimodal—it has one mode (roughly at 10) around which the observations are concentrated. The second distribution is bimodal—it has two modes (roughly at 10 and 20) around which the observations are concentrated. The third distribution is kind of flat, or uniform. The distribution has no modes, or no value around which the observations are concentrated. Rather, we see that the observations are roughly uniformly distributed among the different values.
+Note that all three distributions are symmetric, but are different in their modality (peakedness). The first distribution is unimodal---it has one mode (roughly at 10) around which the observations are concentrated. The second distribution is bimodal---it has two modes (roughly at 10 and 20) around which the observations are concentrated. The third distribution is kind of flat, or uniform. The distribution has no modes, or no value around which the observations are concentrated. Rather, we see that the observations are roughly uniformly distributed among the different values.
 
 ## Skewed Right Distributions
 
@@ -131,14 +134,14 @@ As you can see from the histogram, the grades distribution is roughly symmetric.
 
 **Center**
 
-The center of the distribution is its midpoint—the value that divides the distribution so that approximately half the observations take smaller values, and approximately half the observations take larger values. Note that from looking at the histogram we can get only a rough estimate for the center of the distribution. (More exact ways of finding measures of center will be discussed in the next section.)
+The center of the distribution is its midpoint---the value that divides the distribution so that approximately half the observations take smaller values, and approximately half the observations take larger values. Note that from looking at the histogram we can get only a rough estimate for the center of the distribution. (More exact ways of finding measures of center will be discussed in the next section.)
 
 Recall our grades example (image above). As you can see from the histogram, the center of the grades distribution is roughly 70 (7 students scored below 70, and 8 students scored above 70).
 
 **Spread**
 
 The spread (also called variability) of the distribution can be described by the approximate range covered by the data.
-From looking at the histogram, we can approximate the smallest observation (minimum), and the largest observation (maximum), and thus approximate the range. 
+From looking at the histogram, we can approximate the smallest observation (minimum), and the largest observation (maximum), and thus approximate the range.
 
 *In our example:*
 
@@ -244,7 +247,7 @@ For dataset A, the mean is `r meanA`, and the median is `r medianA`. Looking at 
 
 Therefore:
 
-* For symmetric distributions with no outliers: $\bar{x}$ is approximately equal to $M$.  
+* For symmetric distributions with no outliers: $\bar{x}$ is approximately equal to $M$.
 
 ```{r, echo = FALSE}
 set.seed(123)
@@ -333,9 +336,9 @@ $(7 - 9), (9 - 9), (5 - 9), (13 - 9), (3 - 9), (11 - 9), (15 - 9), (9 - 9)$
 $(-2)^2 = 4, (0)^2 = 0, (-4)^2 = 16$, and the rest are $16, 36, 4, 36, 0$
 
 6. Average the square deviations by adding them up and dividing by $n - 1$ (one less than the sample size):
-$4+0+16+16+36+4+36+0(8−1)=1127=16$
+$4+0+16+16+36+4+36+0(8-1)=1127=16$
 
-* The reason why we "sort of" average the square deviations (divide by $n −1$ ) rather than take the actual average (divide by $$) is beyond the scope of the course at this point, but will be addressed later.
+* The reason why we "sort of" average the square deviations (divide by $n -1$ ) rather than take the actual average (divide by $$) is beyond the scope of the course at this point, but will be addressed later.
 
 * This average of the squared deviations is called the variance of the data.
 

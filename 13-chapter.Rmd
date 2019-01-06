@@ -1,11 +1,14 @@
-
-
-# Correlation Coefficient 
+# Correlation Coefficient
 
 
 Please watch the Chapter 13 Video below.
 
+<!---
 `r knitr::include_url("http://passiondrivenstatistics.com/2015/10/05/chapter-13/", height = "500px")`
+-->
+
+**Video:  11. Correlation** (SAS version)
+<iframe src="https://player.vimeo.com/video/141449208?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 $Q \rightarrow Q$ is different in the sense that both variables (in particular the explanatory variable) are quantitative, and therefore, as you'll discover, this case will require a different kind of treatment and tools. Let's start with an example:
 
@@ -15,9 +18,9 @@ $Q \rightarrow Q$ is different in the sense that both variables (in particular t
 
 A Pennsylvania research firm conducted a study in which 30 drivers (of ages 18 to 82 years old) were sampled, and for each one, the maximum distance (in feet) at which he/she could read a newly designed sign was determined. The goal of this study was to explore the relationship between a driver's age and the maximum distance at which signs were legible, and then use the study's findings to improve safety for older drivers. (Reference: Utts and Heckard, Mind on Statistics (2002). Originally source: Data collected by Last Resource, Inc, Bellfonte, PA.)
 
-Since the purpose of this study is to explore the effect of age on maximum legibility distance, 
+Since the purpose of this study is to explore the effect of age on maximum legibility distance,
 
-* the explanatory variable is Age, 
+* the explanatory variable is Age,
 
 * and the response variable is Distance.
 
@@ -36,7 +39,7 @@ To create a scatterplot, each pair of values is plotted, so that the value of th
 
 ```{r}
 library(ggplot2)
-ggplot(data = signdist, aes(x = Age, y = Distance)) + 
+ggplot(data = signdist, aes(x = Age, y = Distance)) +
   geom_point(color = "purple") +
   theme_bw()
 ```
@@ -96,23 +99,23 @@ Let's go back now to our example, and use the scatterplot to examine the relatio
 
 ```{r}
 library(ggplot2)
-ggplot(data = signdist, aes(x = Age, y = Distance)) + 
+ggplot(data = signdist, aes(x = Age, y = Distance)) +
   geom_point(color = "purple") +
-  theme_bw() + 
+  theme_bw() +
   labs(x = "Drivers Age (years)", y = "Sign Legibility Distance (feet)")
 ```
 
 The direction of the relationship is negative, which makes sense in context, since as you get older your eyesight weakens, and in particular older drivers tend to be able to read signs only at lesser distances. An arrow drawn over the scatterplot illustrates the negative direction of this relationship:
 
 ```{r}
-ggplot(data = signdist, aes(x = Age, y = Distance)) + 
+ggplot(data = signdist, aes(x = Age, y = Distance)) +
   geom_point(color = "purple") +
-  theme_bw() + 
+  theme_bw() +
   labs(x = "Drivers Age (years)", y = "Sign Legibility Distance (feet)") +
   stat_smooth(method = lm)
 ```
 
-The form of the relationship seems to be **linear**. Notice how the points tend to be scattered about the line. Although, as we mentioned earlier, it is problematic to assess the strength without a numerical measure, the relationship appears to be **moderately strong**, as the data is fairly tightly scattered about the line. Finally, all the data points seem to "obey" the pattern—there **do not appear to be any outliers**.
+The form of the relationship seems to be **linear**. Notice how the points tend to be scattered about the line. Although, as we mentioned earlier, it is problematic to assess the strength without a numerical measure, the relationship appears to be **moderately strong**, as the data is fairly tightly scattered about the line. Finally, all the data points seem to "obey" the pattern---there **do not appear to be any outliers**.
 
 ## The Correlation Coefficient
 
@@ -133,7 +136,7 @@ However, the calculation of the correlation ($r$) is not the focus of this cours
 
 Once we obtain the value of $r$, its interpretation with respect to the strength of linear relationships is quite simple, as this walk-through will illustrate:
 
-![](./graphics/linear17.gif)  
+![](./graphics/linear17.gif)
 
 In order to get a better sense for how the value of r relates to the strength of the linear relationship, take a look at [this applet](http://www.seeingstatistics.com/seeing1999/reg/corr.html).
 
@@ -150,9 +153,9 @@ Earlier, we used the scatterplot below to find a negative linear relationship be
 ```{r}
 cor(signdist$Age, signdist$Distance)
 cor.test(signdist$Age, signdist$Distance)
-ggplot(data = signdist, aes(x = Age, y = Distance)) + 
+ggplot(data = signdist, aes(x = Age, y = Distance)) +
   geom_point(color = "purple") +
-  theme_bw() + 
+  theme_bw() +
   labs(x = "Drivers Age (years)", y = "Sign Legibility Distance (feet)") +
   stat_smooth(method = lm)
 ```
@@ -165,7 +168,7 @@ Since $r < 0$, it confirms that the direction of the relationship is negative (a
 
 A statistics department is interested in tracking the progress of its students from entry until graduation. As part of the study, the department tabulates the performance of 10 students in an introductory course and in an upper-level course required for graduation. What is the relationship between the students' course averages in the two courses? Here is the scatterplot for the data:
 
-![](./graphics/linear4.gif)  
+![](./graphics/linear4.gif)
 
 The scatterplot suggests a relationship that is **positive** in direction, **linear** in form, and seems quite strong. The value of the correlation that we find between the two variables is $r = 0.931$, which is very close to 1, and thus confirms that indeed the linear relationship is very strong.
 
@@ -175,7 +178,7 @@ A correlation coefficient assesses the degree of linear relationship between two
 
 **Pearson Correlation Assignment**
 
-Post syntax to your private GitHub repo used to generate a correlation coefficient along with corresponding output and a few sentences of interpretation. 
+Post syntax to your private GitHub repo used to generate a correlation coefficient along with corresponding output and a few sentences of interpretation.
 
 **Note:** When we square $r$, it tells us what proportion of the variability in one variable is described by variation in the second variable (aka $R^2$ or Coefficient of Determination).
 
@@ -183,8 +186,8 @@ Post syntax to your private GitHub repo used to generate a correlation coefficie
 
 ```{r}
 ggplot(data = nesarc, aes(x = DailyCigsSmoked, y = NumberNicotineSymptoms)) +
-  geom_point(color = "lightblue") + 
-  theme_bw() + 
+  geom_point(color = "lightblue") +
+  theme_bw() +
   labs(x = "Number of cigarettes smoked daily", y = "Number of nicotine dependence symptoms")
 cor.test(nesarc$DailyCigsSmoked, nesarc$NumberNicotineSymptoms)
 r <- cor(nesarc$DailyCigsSmoked, nesarc$NumberNicotineSymptoms, use = "complete.obs")

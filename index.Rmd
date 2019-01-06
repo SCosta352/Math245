@@ -25,3 +25,59 @@ The source code that creates this document resides at <https://github.com/eriker
 ```
 
 This document is maintained by [Erik B. Erhardt](https://statacumen.com/about/)
+  for use in a special version of UNM Stat 145: **[Statistics for Research (S4R)](https://statacumen.com/teaching/s4r-s19/)**.
+
+<!---
+Comments in blocks like this.
+-->
+
+<!---
+Video links:
+
+**Video:  01. Introduction**
+<iframe src="https://www.youtube.com/embed/_8A0zx51BKs?rel=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+**Video:  02. Data Sets and Code Books**
+<iframe src="https://player.vimeo.com/video/129601017?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+**Video:  03. Literature Review**
+<iframe src="https://player.vimeo.com/video/139525602?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+**Video:  04. Working with Data**
+<iframe src="https://player.vimeo.com/video/157497682?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+**Video:  05. Data Management**
+<iframe src="https://player.vimeo.com/video/151207734?byline=0&amp;portrait=0" width="747" height="420" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></i
+
+**Video:  06. Graphing: One Variable at a Time**
+<iframe src="https://player.vimeo.com/video/152493596?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+**Video:  07. Graphing Relationships**
+<iframe src="https://player.vimeo.com/video/160477834" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+**Video:  08. Hypothesis Testing**
+<iframe src="https://player.vimeo.com/video/133507581?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+**Video:  09. Analysis of Variance**
+<iframe src="https://player.vimeo.com/video/166245557?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfulls
+
+**Video:  10. Chi-Square Test of Independence**
+<iframe src="https://player.vimeo.com/video/172675181?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfulls
+
+  **Video:  11. Correlation**  (SAS version)
+  <iframe src="https://player.vimeo.com/video/141449208?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+**Video:  12. Moderation**
+<iframe src="https://player.vimeo.com/video/179524400?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfulls
+
+**Video:  13. The Question of Causation**
+<iframe src="https://www.youtube.com/embed/Bg9eEcs9cVY" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+**Video:  14. Multivariate Models and Confounding**
+<iframe src="https://player.vimeo.com/video/185704607?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfulls
+
+**Video:  15. Writing Your Poster Presentation**
+<iframe src="https://player.vimeo.com/video/273462689?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+
+-->
