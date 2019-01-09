@@ -20,7 +20,7 @@ Are they equally divided? If not, do the percentages follow some other kind of p
 
 There is no way that we can answer these questions by looking at the raw data, which are in the form of a long list of 1,200 responses and thus not very useful. However, both these questions will be easily answered once we summarize and look at the frequency distribution of the variable `BodyImage` (i.e., once we summarize how often each of the categories occurs).
 
-In order to summarize the distribution of a categorical variable, we ask our statistical software program to create a table of the different values (categories) the variable takes, how many times each value occurs (count), and, more importantly, how often each value occurs (percentages). Here is the table (i.e. frequency distribution) for our example:
+In order to summarize the distribution of a categorical variable, we ask our statistical software program to create a table of the different values (categories) the variable takes, how many times each value occurs (count), and, more importantly, how often each value occurs (percentages). Here is the table (i.e., frequency distribution) for our example:
 
 ```{r, echo = FALSE}
 DF2 <- data.frame(CATEGORY =c("About Right", "Overweight", "Underweight", "Total"), COUNT = c(855, 235, 110, 1200), PERCENTAGE = c("71.3%", "19.6%", "9.2%", "100%"))
@@ -34,7 +34,7 @@ Please watch the Chapter 07 video below.
 -->
 
 **Video:  05. Data Management**
-<iframe src="https://player.vimeo.com/video/151207734?byline=0&amp;portrait=0" width="747" height="420" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></i
+<iframe src="https://player.vimeo.com/video/151207734?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 **Data Management with `R`**
 
@@ -54,7 +54,7 @@ title_of_data_set$VAR1[title_of_data_set$VAR1 == 9] <- NA
 
 *2. Need to recode responses to "no" based on skip patterns*
 
-There are a number of skip outs in some data sets. For example, if we ask someone whether or not they have ever used marijuana, and they say "no", it would not make sense to ask them more detailed questions about their marijuana use (e.g. quantity, frequency, onset, impairment, etc.). When analyzing more detailed questions regarding marijuana (e.g. have you ever smoked marijuana daily for a month or more?), those individuals that never used the substance may show up as missing data. Since they have never used marijuana, we can assume that their answer is "no", they have never smoked marijuana daily. This would need to be explicitly recoded. Note that we commonly code a no as 0 and a yes as 1.
+There are a number of skip outs in some data sets. For example, if we ask someone whether or not they have ever used marijuana, and they say "no", it would not make sense to ask them more detailed questions about their marijuana use (e.g., quantity, frequency, onset, impairment, etc.). When analyzing more detailed questions regarding marijuana (e.g., have you ever smoked marijuana daily for a month or more?), those individuals that never used the substance may show up as missing data. Since they have never used marijuana, we can assume that their answer is "no", they have never smoked marijuana daily. This would need to be explicitly recoded. Note that we commonly code a no as 0 and a yes as 1.
 
 ```{r, eval = FALSE, prompt = TRUE}
 title_of_data_set$VAR1[is.na(title_of_data_set$VAR1)] <- 0
@@ -81,7 +81,7 @@ summary(NESARC$DepressLife)
 
 *5. Need to create continuous variables*
 
-If you are working with a number of items that represent a single construct, it may be useful to create a composite variable/score. For example, I want to use a list of nicotine dependence symptoms meant to address the presence or absence of nicotine dependence (e.g. tolerance, withdrawal, craving, etc.). Rather than using a dichotomous variable (i.e. nicotine dependence present/absent), I want to examine the construct as a dimensional scale (i.e. number of nicotine dependence symptoms). In this case, I would want to recode each symptom variable so that `yes=1` and `no=0` and then sum the items so that they represent one composite score.
+If you are working with a number of items that represent a single construct, it may be useful to create a composite variable/score. For example, I want to use a list of nicotine dependence symptoms meant to address the presence or absence of nicotine dependence (e.g., tolerance, withdrawal, craving, etc.). Rather than using a dichotomous variable (i.e., nicotine dependence present/absent), I want to examine the construct as a dimensional scale (i.e., number of nicotine dependence symptoms). In this case, I would want to recode each symptom variable so that `yes=1` and `no=0` and then sum the items so that they represent one composite score.
 
 ```{r, prompt = TRUE, eval = FALSE}
 nd_sum <- title_of_data_set$nd_symptom1 + title_of_data_set$nd_symptom2 + title_of_data_set$nd_symptom3
@@ -90,7 +90,7 @@ title_of_data_set$nd_sum <- nd_sum
 
 *6. Labeling variable responses/values*
 
-Given that nominal and ordinal variables have, or are given numeric response values (i.e. dummy codes), it can be useful to label those values so that the labels are displayed in your output.
+Given that nominal and ordinal variables have, or are given numeric response values (i.e., indicator codes), it can be useful to label those values so that the labels are displayed in your output.
 
 ```{r, prompt = TRUE, eval = FALSE}
 levels(title_of_data_set$VARIABLE) <- c("value", "value")
@@ -199,7 +199,7 @@ See the `PDS` vignette for additional examples.
 Push to your private repository on GitHub:
 
 1. A program that manages your data.
-2. Output that displays 3 of your secondary (i.e. data managed) variables as frequency tables.
+2. Output that displays 3 of your secondary (i.e., data managed) variables as frequency tables.
 
 
 ------------------------------

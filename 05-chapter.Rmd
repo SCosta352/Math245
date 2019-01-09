@@ -1,5 +1,3 @@
-
-
 # Writing About Empirical Research
 
 The goal of research is to disseminate your work and allow it to guide further study. As such, writing is an important and ongoing part of the research process.
@@ -78,7 +76,7 @@ This measures discussion is successful because it indicates how attitudes were m
 
 *Measures*
 
-*Lifetime major depression (i.e. those experienced in the past 12 months and prior to the past 12 months) were assessed using the NIAAA, Alcohol Use Disorder and Associated Disabilities Interview Schedule - DSM-IV (AUDADIS-IV) (Grant et al., 2003; Grant, Harford, Dawson, & Chou, 1995). The tobacco module of the AUDADIS-IV contains detailed questions on the frequency, quantity, and patterning of tobacco use as well as symptom criteria for DSM- IV nicotine dependence. Current smoking was evaluated through both smoking frequency ("About how often did you usually smoke in the past year?") coded dichotomously in terms of the presence or absence of daily smoking, and quantity ("On the days that you smoked in the last year, about how many cigarettes did you usually smoke?").*
+*Lifetime major depression (i.e., those experienced in the past 12 months and prior to the past 12 months) were assessed using the NIAAA, Alcohol Use Disorder and Associated Disabilities Interview Schedule - DSM-IV (AUDADIS-IV) (Grant et al., 2003; Grant, Harford, Dawson, & Chou, 1995). The tobacco module of the AUDADIS-IV contains detailed questions on the frequency, quantity, and patterning of tobacco use as well as symptom criteria for DSM- IV nicotine dependence. Current smoking was evaluated through both smoking frequency ("About how often did you usually smoke in the past year?") coded dichotomously in terms of the presence or absence of daily smoking, and quantity ("On the days that you smoked in the last year, about how many cigarettes did you usually smoke?").*
 
 **Predicted Results or Implications**
 
@@ -128,6 +126,7 @@ Stanton, W. R., Lowe, J. B., & Silva, P. A. (1995). Antecedents of vulnerability
 
 **Note that every primary source article that you read as you conduct your literature review is a model of the kind of writing you are trying to accomplish.**
 
+<!---
 **Campus Resources**
 
 The Writing Program at Appalachian State University offers a variety of excellent services. Tutors in the Writing Workshop can assist students at any stage of the writing process. Students seeking extra assistance are encouraged to apply for a Writing Mentor. Details about the Writing Program are available at: <http://writingcenter.appstate.edu/>
@@ -135,5 +134,6 @@ The Writing Program at Appalachian State University offers a variety of excellen
 **Research Plan Assignment**
 
 You will spend the next three weeks writing your research plan. This plan should include the following: Title, Author's name (this will be blank for CrowdGrader submissions to ensure double blind reviewing), Introduction, Method, Implications, and References. The paper should be 4 to 5 pages double-spaced (including a page for references).  In preparation for writing the introduction section, you should have found and read at least 25 primary source articles, although only those that help provide important background and allow you to make an argument in support of your proposed research should be cited.  This assignment will be graded A-F and will act as the basis for your final poster. Your paper should be submitted through <http://www.crowdgrader.org> AND pushed to your private repository. More detailed directions can be found on the course repository.
+-->
 
 --------------------------

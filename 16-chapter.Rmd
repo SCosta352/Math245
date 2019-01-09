@@ -4,7 +4,7 @@ Suppose you want to determine the musical preferences of all students at your un
 
 **Example 1**
 
-Post a music-lovers' survey on a university IInternet bulletin board, asking students to vote for their favorite type of music.
+Post a music-lovers' survey on a university Internet bulletin board, asking students to vote for their favorite type of music.
 
 This is an example of a **volunteer sample**, where individuals have selected themselves to be included. Such a sample is almost guaranteed to be **biased**. In general, volunteer samples tend to be comprised of individuals who have a particularly strong opinion about an issue, and are looking for an opportunity to voice it. Whether the variable's values obtained from such a sample are over- or under-stated, and to what extent, cannot be determined. As a result, data obtained from a voluntary response sample is quite useless when you think about the "Big Picture," since the sampled individuals only provide information about themselves, and **we cannot generalize** to any larger group at all.
 

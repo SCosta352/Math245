@@ -7,7 +7,7 @@ Please watch the Chapter 11 video below.
 -->
 
 **Video:  09. Analysis of Variance**
-<iframe src="https://player.vimeo.com/video/166245557?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfulls
+<iframe src="https://player.vimeo.com/video/166245557?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 In our description of hypothesis testing in the previous chapter, we started with case $C \rightarrow Q$, where the explanatory variable/independent variable/predictor ($X$ = major depression) is categorical and the response variable/dependent variable/outcome ($Y$ = number of cigarettes smoked) is quantitative. Here is a similar example:
 
@@ -217,7 +217,7 @@ Post hoc paired comparisons (meaning "after the fact" or "afterdata collection")
 
 Type I error occurs when you make an incorrect decision about the null hypothesis. Specifically, this type of error is made when your p-value makes you reject the null hypothesis ($H_0$) when it is true. In other words, your p-value is sufficiently small for you to say that there is a real association, despite the fact that the differences you see are due to chance alone. The type I error rate equals your p-value and is denoted by the Greek letter $\alpha$ (alpha).
 
-Although a Type I Error rate of 0.05 is considered acceptable (i.e. it is acceptable that 5 times out of 100 you will reject the null hypothesis when it is true), higher Type I error rates are not considered acceptable. If you were to use the significance level of 0.05 across multiple paired comparisons (for example, three independent comparisons) with $\alpha = 0 .05$, then the $\alpha$ rate across all three comparisons is $1 - (1 - \alpha)^{\text{Number of comparisons}} = 1 - (1 - 0.05)^3 = `r 1 - (1 - 0.05)^3`$. In other words, across the unprotected paired comparisons you will reject the null hypothesis when it is true roughly 14 times out of 100.
+Although a Type I Error rate of 0.05 is considered acceptable (i.e., it is acceptable that 5 times out of 100 you will reject the null hypothesis when it is true), higher Type I error rates are not considered acceptable. If you were to use the significance level of 0.05 across multiple paired comparisons (for example, three independent comparisons) with $\alpha = 0 .05$, then the $\alpha$ rate across all three comparisons is $1 - (1 - \alpha)^{\text{Number of comparisons}} = 1 - (1 - 0.05)^3 = `r 1 - (1 - 0.05)^3`$. In other words, across the unprotected paired comparisons you will reject the null hypothesis when it is true roughly 14 times out of 100.
 
 The purpose of running protected post hoc tests is that they allow you to conduct multiple paired comparisons without inflating the Type I Error rate.
 
@@ -239,7 +239,7 @@ Of the $\binom{4}{2}=6$ pairwise differences, Tukey's HSD suggest that all excep
 
 **Analysis of Variance Assignment**
 
-Post the syntax to your private GitHub repository used to run an ANOVA along with corresponding output and a few sentences of interpretation. You will need to analyze and interpret post hoc paired comparisons in instances where your original statistical test was significant, and you were examining more than two groups (i.e. more than two levels of a categorical, explanatory variable).
+Post the syntax to your private GitHub repository used to run an ANOVA along with corresponding output and a few sentences of interpretation. You will need to analyze and interpret post hoc paired comparisons in instances where your original statistical test was significant, and you were examining more than two groups (i.e., more than two levels of a categorical, explanatory variable).
 
 **Example of how to write results for ANOVA:**
 
@@ -270,7 +270,7 @@ plot(TukeyHSD(mod))
 par(opar)
 ```
 
-ANOVA revealed that among daily, young adult smokers (my sample), number of cigarettes smoked per day (collapsed into 5 ordered categories, which is the categorical explanatory variable) and number of nicotine dependence symptoms (quantitative response variable) were significantly associated, F (`r RES[[1]][1,1]`, `r RES[[1]][2,1]`) = `r round(RES[[1]][1,4],2)`, p < 0.0001. Post hoc comparisons of mean number of nicotine dependence symptoms by pairs of cigarettes per day categories revealed that those individuals smoking more than 10 cigarettes per day (i.e. 11 to 15, 16 to 20 and >20) reported significantly more nicotine dependence symptoms compared to those smoking 10 or fewer cigarettes per day (i.e. 1 to 5 and 6 to 10 cigarettes per day).
+ANOVA revealed that among daily, young adult smokers (my sample), number of cigarettes smoked per day (collapsed into 5 ordered categories, which is the categorical explanatory variable) and number of nicotine dependence symptoms (quantitative response variable) were significantly associated, F (`r RES[[1]][1,1]`, `r RES[[1]][2,1]`) = `r round(RES[[1]][1,4],2)`, p < 0.0001. Post hoc comparisons of mean number of nicotine dependence symptoms by pairs of cigarettes per day categories revealed that those individuals smoking more than 10 cigarettes per day (i.e., 11 to 15, 16 to 20 and >20) reported significantly more nicotine dependence symptoms compared to those smoking 10 or fewer cigarettes per day (i.e., 1 to 5 and 6 to 10 cigarettes per day).
 
 
 ----------------------------
