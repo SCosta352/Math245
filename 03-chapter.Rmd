@@ -1,5 +1,3 @@
-
-
 # Data Architecture
 
 **Data Architecture^[https://oli.cmu.edu/jcourse/workbook/activity/page?context=434b846d80020ca60084af88b54dce2b]---What do we really mean by data?**
@@ -24,26 +22,25 @@ Variables can be classified into one of two types: quantitative or categorical.
 * Age, Weight, and Height are **quantitative** variables
 * Race, Gender, and Smoking are **categorical** variables
 
-Notice that the values of the categorical variable, Smoking, have been coded as the numbers 0 or 1. It is quite common to code the values of a categorical variable as numbers, but you should remember that these are just codes (often called dummy codes). They have no arithmetic meaning (i.e., it does not make sense to add, subtract, multiply, divide, or compare the magnitude of such values.)
-A unique identifier is a variable that is meant to distinctively define each of the individuals or observations in your data set. Examples might include serial numbers (for data on a particular product), social security numbers (for data on individual persons), or random numbers (generated for any type of observations). Every data set should have a variable that uniquely identifies the observations. In this example, the patient number (1 through 75) is a unique identifier.
+Notice that the values of the categorical variable, Smoking, have been coded as the numbers 0 or 1. It is quite common to code the values of a categorical variable as numbers, but you should remember that these are just codes (often called indicator codes). They have no arithmetic meaning (i.e., it does not make sense to add, subtract, multiply, divide, or compare the magnitude of such values).
+A **unique identifier** is a variable that is meant to distinctively define each of the individuals or observations in your data set. Examples might include serial numbers (for data on a particular product), social security numbers (for data on individual persons), or random numbers (generated for any type of observations). Every data set should have a variable that uniquely identifies the observations. In this example, the patient number (1 through 75) is a unique identifier.
 
 **Medical Records Assignment**
+
 Although you will be working with previously collected data, it is important to understand what data looks like as well as how it is coded and entered into a spreadsheet or dataset for analysis.
-Using medical records for 5 patients seeking treatment in a hospital emergency room.
+Pretend you are designing an intake form for a hospital emergency room.
+Create abbreviated medical records for 5 patients seeking treatment.
 
 1. Select 4 variables recorded on the medical forms (one should be a unique identifier, at least one should be a quantitative variable and at least one should be a categorical variable)
-
 2. Select a brief name (ideally 8 characters or less) for each variable
-
-3. Determine what range of values is needed for recording each variable (create dummy codes as needed)
-
-4. Label variables within an Excel spreadsheet
-
-5. Enter data for each patient in the Excel spreadsheet
-
-6. List the variable names, labels, types, and, response codes below the data set (i.e. the code book).
-
+3. Determine what range of values is needed for recording each variable (create indicator codes as needed)
+4. Label variables within a spreadsheet
+5. Enter data for each patient in the spreadsheet
+6. List the variable names, labels, types, and, response codes below the data set (i.e., the code book).
+7. Compile your Rmd file, have a peer review it for you, then submit it.
+<!---
 7. Push the Excel spreadsheet to your private GitHub repository.
+-->
 
 **Model:**
 
@@ -60,7 +57,7 @@ c) Is humidity associated with caterpillar reproduction?
 
 **Example:**
 
-*After looking through the codebook for the NESARC study, I have decided that I am particularly interested in nicotine dependence. I am not sure which variables I will use regarding nicotine dependence (e.g. symptoms or diagnosis) so for now I will include all of the relevant variables in my personal codebook.*
+*After looking through the codebook for the NESARC study, I have decided that I am particularly interested in nicotine dependence. I am not sure which variables I will use regarding nicotine dependence (e.g., symptoms or diagnosis) so for now I will include all of the relevant variables in my personal codebook.*
 
 At this point, you should continue to explore the code book for the data set you have selected.
 
@@ -72,7 +69,7 @@ After choosing a data set, you should:
 
 **Example:**
 
-*While nicotine dependence is a good starting point, I need to determine what it is about nicotine dependence that I am interested in. It strikes me that friends and acquaintances that I have known through the years that became hooked on cigarettes did so across very different periods of time. Some seemed to be dependent soon after their first few experiences with smoking and others after many years of generally irregular smoking behavior. I decide that I am most interested in exploring the association between level of smoking and nicotine dependence. I add to my codebook variables reflecting smoking levels (e.g. smoking quantity and frequency).*
+*While nicotine dependence is a good starting point, I need to determine what it is about nicotine dependence that I am interested in. It strikes me that friends and acquaintances that I have known through the years that became hooked on cigarettes did so across very different periods of time. Some seemed to be dependent soon after their first few experiences with smoking and others after many years of generally irregular smoking behavior. I decide that I am most interested in exploring the association between level of smoking and nicotine dependence. I add to my codebook variables reflecting smoking levels (e.g., smoking quantity and frequency).*
 
 During a second review of the codebook for the dataset that you have selected, you should:
 

@@ -26,12 +26,12 @@ Empirical research is all about making decisions (the best ones possible with th
 **Video:  04. Working with Data**
 <iframe src="https://player.vimeo.com/video/157497682?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
-This will get you thinking about some of the earliest decisions you will need to make when working with your data (i.e. selecting columns and possibly rows).
+This will get you thinking about some of the earliest decisions you will need to make when working with your data (i.e., selecting columns and possibly rows).
 
 **Working with Data Lab**
 
 This week, you will learn how to call in a dataset, select the columns
-(i.e. variables), and possibly rows (i.e. observations), of interest, and
+(i.e., variables), and possibly rows (i.e., observations), of interest, and
 run frequency distributions for your chosen variables. Read the `PDS` vignette to see examples of subsetting your data, renaming variables, coding missing values, collapsing categories, creating a factor from a numeric vector, aggregating variables using `ifelse`, creating a new variable with `mutate`, etc.  [RStudio](https://www.rstudio.com/) has several cheat sheets available at <https://www.rstudio.com/resources/cheatsheets/>.  You may find the [data wrangling cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf) and the [data visualization cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/05/ggplot2-cheatsheet.pdf) useful for the working with data assignment.
 
 **Working with Data Assignment**

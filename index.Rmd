@@ -1,9 +1,7 @@
 ---
 title: "Passion Driven Statistics"
-author: "Modified for use with [R,](https://www.r-project.org/) [GitHub,](https://github.com/) and [Zotero](https://www.zotero.org/)"
-date: "Erik B. Erhardt, Alan T. Arnholt, and Lisa Dierker"
-abstract: |
-  Last updated: `r format(Sys.time(), "%B %d, %Y")`
+author: "Erik B. Erhardt, Alan T. Arnholt, Lisa Dierker, and others"
+date: "Modified for use with [R](https://www.r-project.org/) and [Zotero](https://www.zotero.org/)"
 knit: "bookdown::render_book"
 site: bookdown::bookdown_site
 documentclass: book
@@ -14,7 +12,39 @@ css: "./CSS/style.css"
 knitr::opts_chunk$set(comment = NA, fig.align = "center", comment = NA, warning = FALSE, message = FALSE)
 ```
 
-# Copyright {-}
+# Foreward {-}
+
+Follow your passion through statistics while learning the R language.
+
+**Video:  00. Passion-Driven Statistics** in 2 minutes
+<iframe src="https://player.vimeo.com/video/159566845?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+
+
+Statistical analysis is arguably the most salient point of intersection among
+diverse disciplines, yet developing analytic skills is often viewed as an
+obstacle rather than an opportunity to pursue your own interests and to answer
+questions that you feel passionately about.
+
+This is why we created **[Passion-Driven Statistics](https://passiondrivenstatistics.com/)**. It is statistics in the
+service of your own research --- in the service of your passion. It is a
+multidisciplinary, project-based curriculum that supports students in
+conducting original research, asking original questions, and communicating
+methods and results using the language of statistics. The curriculum supports
+students to work with existing data covering health, geography and earth
+science, government, business, education, genetics, and more. From existing
+data, you'll be able to pose questions of interest to you and then use
+statistical software (e.g., R) to turn raw data into useful information.
+
+We believe that students from diverse educational, social and economic
+backgrounds deserve not only a seat in a classroom, but also a welcoming place
+at the table. Our goal is to increase the number and diversity of students
+exposed to meaningful and empowering data analysis experiences and to inspire
+the pursuit of advanced data-driven experiences and opportunities for everyone!
+
+<!---
+was in title: "[GitHub,](https://github.com/) and"
+## Copyright {-}
+-->
 
 ```{block, type = "rmdlicense"}
 This work is licensed under [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License]( http://creativecommons.org/licenses/by-nc-sa/3.0)
@@ -27,12 +57,18 @@ The source code that creates this document resides at <https://github.com/eriker
 This document is maintained by [Erik B. Erhardt](https://statacumen.com/about/)
   for use in a special version of UNM Stat 145: **[Statistics for Research (S4R)](https://statacumen.com/teaching/s4r-s19/)**.
 
+
+Last updated: `r format(Sys.time(), "%B %d, %Y")`
+
 <!---
-Comments in blocks like this.
 -->
 
 <!---
-Video links:
+Video links:  https://passiondrivenstatistics.com/r/
+
+**Video:  00. Passion-Driven Statistics**
+<iframe src="https://player.vimeo.com/video/159566845?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://player.vimeo.com/video/159566845?title=0&amp;byline=0&amp;portrait=0" width="1165" height="655" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 **Video:  01. Introduction**
 <iframe src="https://www.youtube.com/embed/_8A0zx51BKs?rel=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
@@ -47,34 +83,34 @@ Video links:
 <iframe src="https://player.vimeo.com/video/157497682?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 **Video:  05. Data Management**
-<iframe src="https://player.vimeo.com/video/151207734?byline=0&amp;portrait=0" width="747" height="420" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></i
+<iframe src="https://player.vimeo.com/video/151207734?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 **Video:  06. Graphing: One Variable at a Time**
 <iframe src="https://player.vimeo.com/video/152493596?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 **Video:  07. Graphing Relationships**
-<iframe src="https://player.vimeo.com/video/160477834" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://player.vimeo.com/video/160477834?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 **Video:  08. Hypothesis Testing**
 <iframe src="https://player.vimeo.com/video/133507581?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 **Video:  09. Analysis of Variance**
-<iframe src="https://player.vimeo.com/video/166245557?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfulls
+<iframe src="https://player.vimeo.com/video/166245557?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 **Video:  10. Chi-Square Test of Independence**
-<iframe src="https://player.vimeo.com/video/172675181?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfulls
+<iframe src="https://player.vimeo.com/video/172675181?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
-  **Video:  11. Correlation**  (SAS version)
-  <iframe src="https://player.vimeo.com/video/141449208?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+**Video:  11. Correlation**
+<iframe src="https://player.vimeo.com/video/177164893?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 **Video:  12. Moderation**
-<iframe src="https://player.vimeo.com/video/179524400?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfulls
+<iframe src="https://player.vimeo.com/video/179524400?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 **Video:  13. The Question of Causation**
-<iframe src="https://www.youtube.com/embed/Bg9eEcs9cVY" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<iframe src="https://www.youtube.com/embed/Bg9eEcs9cVY?rel=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 **Video:  14. Multivariate Models and Confounding**
-<iframe src="https://player.vimeo.com/video/185704607?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfulls
+<iframe src="https://player.vimeo.com/video/185704607?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 **Video:  15. Writing Your Poster Presentation**
 <iframe src="https://player.vimeo.com/video/273462689?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>

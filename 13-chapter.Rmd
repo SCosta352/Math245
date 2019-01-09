@@ -7,8 +7,8 @@ Please watch the Chapter 13 Video below.
 `r knitr::include_url("http://passiondrivenstatistics.com/2015/10/05/chapter-13/", height = "500px")`
 -->
 
-**Video:  11. Correlation** (SAS version)
-<iframe src="https://player.vimeo.com/video/141449208?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+**Video:  11. Correlation**
+<iframe src="https://player.vimeo.com/video/177164893?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 
 $Q \rightarrow Q$ is different in the sense that both variables (in particular the explanatory variable) are quantitative, and therefore, as you'll discover, this case will require a different kind of treatment and tools. Let's start with an example:
 
@@ -182,7 +182,7 @@ Post syntax to your private GitHub repo used to generate a correlation coefficie
 
 **Note:** When we square $r$, it tells us what proportion of the variability in one variable is described by variation in the second variable (aka $R^2$ or Coefficient of Determination).
 
-**Example of how to write results for correlation coefficient:** Among daily, young adult smokers (my sample), the correlation between number of cigarettes smoked per day (quantitative) and number of nicotine dependence symptoms experienced in the past year (quantitative) was `r cor(nesarc$DailyCigsSmoked, nesarc$NumberNicotineSymptoms, use = "complete.obs")` (p < 0.0001), suggesting that only `r round(cor(nesarc$DailyCigsSmoked, nesarc$NumberNicotineSymptoms, use = "complete.obs")^2*100,2)`% (i.e. `r cor(nesarc$DailyCigsSmoked, nesarc$NumberNicotineSymptoms, use = "complete.obs")` squared) of the variance in number of current nicotine dependence symptoms can be explained by number of cigarettes smoked per day.
+**Example of how to write results for correlation coefficient:** Among daily, young adult smokers (my sample), the correlation between number of cigarettes smoked per day (quantitative) and number of nicotine dependence symptoms experienced in the past year (quantitative) was `r cor(nesarc$DailyCigsSmoked, nesarc$NumberNicotineSymptoms, use = "complete.obs")` (p < 0.0001), suggesting that only `r round(cor(nesarc$DailyCigsSmoked, nesarc$NumberNicotineSymptoms, use = "complete.obs")^2*100,2)`% (i.e., `r cor(nesarc$DailyCigsSmoked, nesarc$NumberNicotineSymptoms, use = "complete.obs")` squared) of the variance in number of current nicotine dependence symptoms can be explained by number of cigarettes smoked per day.
 
 ```{r}
 ggplot(data = nesarc, aes(x = DailyCigsSmoked, y = NumberNicotineSymptoms)) +
