@@ -12,7 +12,11 @@ css: "./CSS/style.css"
 knitr::opts_chunk$set(comment = NA, fig.align = "center", comment = NA, warning = FALSE, message = FALSE)
 ```
 
+<<<<<<< HEAD
 # 0 Foreward {-}
+=======
+# Foreward {-}
+>>>>>>> dd03d8d5450fd3972c58d080b1e267082d55819d
 
 Follow your passion through statistics while learning the R language.
 
@@ -26,7 +30,11 @@ obstacle rather than an opportunity to pursue your own interests and to answer
 questions that you feel passionately about.
 
 This is why we created **[Passion-Driven Statistics](https://passiondrivenstatistics.com/)**. It is statistics in the
+<<<<<<< HEAD
 service of *your own research* --- in the service of *your passion*. It is a
+=======
+service of your own research --- in the service of your passion. It is a
+>>>>>>> dd03d8d5450fd3972c58d080b1e267082d55819d
 multidisciplinary, project-based curriculum that supports students in
 conducting original research, asking original questions, and communicating
 methods and results using the language of statistics. The curriculum supports
@@ -68,7 +76,11 @@ Video links:  https://passiondrivenstatistics.com/r/
 
 **Video:  00. Passion-Driven Statistics**
 <iframe src="https://player.vimeo.com/video/159566845?title=0&amp;byline=0&amp;portrait=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+<<<<<<< HEAD
 original page size: <iframe src="https://player.vimeo.com/video/159566845?title=0&amp;byline=0&amp;portrait=0" width="1165" height="655" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+=======
+<iframe src="https://player.vimeo.com/video/159566845?title=0&amp;byline=0&amp;portrait=0" width="1165" height="655" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+>>>>>>> dd03d8d5450fd3972c58d080b1e267082d55819d
 
 **Video:  01. Introduction**
 <iframe src="https://www.youtube.com/embed/_8A0zx51BKs?rel=0" width="747" height="420" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
