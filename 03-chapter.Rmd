@@ -17,7 +17,6 @@ In this example, the individuals are patients, and the variables are Gender, Age
 
 Variables can be classified into one of two types: quantitative or categorical.
 
-<<<<<<< HEAD
 * *Quantitative Variables* take numerical values and represent some kind of measurement.
 * *Categorical Variables* take category or label values and place an individual into one of several groups.
 
@@ -36,22 +35,6 @@ Although you will be working with previously collected data, it is important to 
 Pretend you are designing an intake form for a hospital emergency room.
 Create abbreviated medical records for 5 patients seeking treatment.
 
-=======
-* *Quantitative Variables* take numerical values and represent some kind of measurement
-* *Categorical Variables* take category or label values and place an individual into one of several groups. In our example of medical records, there are several variables of each type:
-* Age, Weight, and Height are **quantitative** variables
-* Race, Gender, and Smoking are **categorical** variables
-
-Notice that the values of the categorical variable, Smoking, have been coded as the numbers 0 or 1. It is quite common to code the values of a categorical variable as numbers, but you should remember that these are just codes (often called indicator codes). They have no arithmetic meaning (i.e., it does not make sense to add, subtract, multiply, divide, or compare the magnitude of such values).
-A **unique identifier** is a variable that is meant to distinctively define each of the individuals or observations in your data set. Examples might include serial numbers (for data on a particular product), social security numbers (for data on individual persons), or random numbers (generated for any type of observations). Every data set should have a variable that uniquely identifies the observations. In this example, the patient number (1 through 75) is a unique identifier.
-
-**Medical Records Assignment**
-
-Although you will be working with previously collected data, it is important to understand what data looks like as well as how it is coded and entered into a spreadsheet or dataset for analysis.
-Pretend you are designing an intake form for a hospital emergency room.
-Create abbreviated medical records for 5 patients seeking treatment.
-
->>>>>>> dd03d8d5450fd3972c58d080b1e267082d55819d
 1. Select 4 variables recorded on the medical forms (one should be a unique identifier, at least one should be a quantitative variable and at least one should be a categorical variable)
 2. Select a brief name (ideally 8 characters or less) for each variable
 3. Determine what range of values is needed for recording each variable (create indicator codes as needed)
